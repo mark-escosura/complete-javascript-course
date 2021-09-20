@@ -263,4 +263,66 @@ if (usaPopulation > averagePopulation) {
 130. See the different results, and set the population back to original
 */
 
-// 
+// Type Conversion and Coercion
+
+// Type Conversion
+
+const inputYear = '1991';
+// console.log(Number(inputYear), inputYear);
+// console.log(inputYear + 18); // this will return a '199118'
+
+// console.log(Number('Jonas'));
+// console.log(typeof NaN);
+
+// console.log(String(23), 23);
+
+// Practice Assignment: 
+
+/*
+Predict the result of these 5 operations without executing them:
+'9' - '5'; // returns 4 because a - operator is being used therefore the system reads that it's subtracting a number.
+'19' - '13' + '17'; // returns 617
+'19' - '13' + 17; // returns 23
+'123' < 57; // returns 123 < 57; NaN; false
+5 + 6 + '4' + 9 - 4 - 2; // 5 + 6 = 11, 49 - 4 - 2 = 43; therefore it returns 1143
+*/
+
+
+
+/*
+2. Execute the operations to check if you were right
+*/
+
+// console.log('9' - '5'); 
+// console.log('19' - '13' + '17');
+// console.log('19' - '13' + 17);
+// console.log('123' < 57);
+// console.log(5 + 6 + '4' + 9 - 4 - 2);
+
+// Type Coercion
+
+console.log('I am '+ 23 + ' years old.'); // all the numbers are converted to strings using the + operator
+
+// Truthy and Falsy Values
+
+// 5 falsy values : 0, '', undefined, null, NaN
+
+console.log(Boolean()); // will return a boolean value; either true or false
+
+const money = 0; // 0 is a falsey value so the else block will be executed
+
+if (money) {
+    console.log("Don't spend it all ;)");
+} else {
+    console.log('You should get a job!');
+}
+
+let height; // there is no value assigned.
+if(height) {  
+    console.log('YAY! Height is defined');
+} else {
+    console.log('Height is undefined'.toUpperCase()); // returns this block of code
+}
+
+// Equality Operators: == vs ===
+

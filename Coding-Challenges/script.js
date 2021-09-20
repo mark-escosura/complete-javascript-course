@@ -12,20 +12,20 @@ Your tasks:
 1. Store Mark's and John's mass and height in variables
 */
 
-let markHeight = 1.69
-let johnHeight = 1.95
-let markWeight = 78
-let johnWeight = 92
+const markHeight = 1.69
+const johnHeight = 1.95
+const markWeight = 78
+const johnWeight = 92
 
 /*
 2. Calculate both their BMIs using the formula (you can even implement both versions)
 */
 
 const markBmiResult = markWeight / markHeight ** 2
-console.log(markBmiResult.toFixed(2));
+// console.log(markBmiResult.toFixed(2));
 
 const johnBmiResult = johnWeight / johnHeight ** 2
-console.log(johnBmiResult.toFixed(2));
+// console.log(johnBmiResult.toFixed(2));
 
 /*
 3. Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
@@ -33,7 +33,7 @@ console.log(johnBmiResult.toFixed(2));
 
 const markHigherBMI = markBmiResult > johnBmiResult;
 
-console.log('Task 3', markBmiResult.toFixed(2), johnBmiResult.toFixed(2), markHigherBMI); 
+// console.log('Task 3', markBmiResult.toFixed(2), johnBmiResult.toFixed(2), markHigherBMI); 
 
 
 // Test Data:
@@ -44,3 +44,36 @@ console.log('Task 3', markBmiResult.toFixed(2), johnBmiResult.toFixed(2), markHi
 
 
 // Coding Challenge No. 2
+
+/*
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it.
+Your tasks:
+*/
+
+/*
+1. Print a nice output to the console, saying who has the higher BMI. The message is either "Mark's BMI 
+is higher than John's!" or "John's BMI is higher than Mark's!"
+*/
+
+if (markBmiResult > johnBmiResult) {
+    console.log("Mark's BMI is higher than John's!");
+} else {
+    console.log("John's BMI is higher than Mark's!");
+}
+
+
+/*
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is
+higher than John's (23.9)!"
+*/
+
+if (markBmiResult > johnBmiResult) {
+    console.log(`Mark's BMI (${markBmiResult.toFixed(2)}) is higher than John's (${johnBmiResult.toFixed(2)})!`);
+} else {
+    console.log(`John's BMI (${johnBmiResult.toFixed(2)}) is higher than Mark's (${markBmiResult.toFixed(2)})!`);
+}
+
+//Hint: Use an if/else statement 😉
+
+// Coding Challenge No. 3
+

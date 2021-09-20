@@ -10,9 +10,9 @@ let js = 'amazing'
 // 1. Declare variables called 'country', 'continent' and 'population' and
 // assign their values according to your own country (population in millions)
 
-let country = "United States Of America";
-let continent = "North America";
-let population = "333,352,517 as of Saturday, September 18, 2021"
+const country = "United States Of America";
+const continent = "North America";
+const population = "333,352,517 as of Saturday, September 18, 2021"
 
 // 2. Log their values to the console
 
@@ -24,7 +24,7 @@ let population = "333,352,517 as of Saturday, September 18, 2021"
 
 // Created an object containing the variables from line 12 - 14
 
-let locationStatus = {
+const locationStatus = {
     country: "United States Of America",
     continent: "North America",
     population: "333,352,517 as of Saturday, September 18, 2021"
@@ -69,10 +69,10 @@ to the console
 
 // let const and var // ES6 // var is the old way of declaring variable
 
-let age = 30; // age can be changed
-age = 31;
+// let age = 30; // age can be changed
+// age = 31;
 
-const birthYear = 1991; // birthYear can't be changed
+// const birthYear = 1991; // birthYear can't be changed
 // birthYear = 1990;
 // const job;
 
@@ -140,7 +140,7 @@ language = "English";
 1. If your country split in half, and each half would contain half the population,
 then how many people would live in each half?
 */
-let usaPopulation = 300000000; // USA has a population of 300,000,000 people.....
+const usaPopulation = 300000000; // USA has a population of 300,000,000 people.....
 const halfOfPopulation = usaPopulation / 2;
 
 // console.log(halfOfPopulation);
@@ -149,7 +149,7 @@ const halfOfPopulation = usaPopulation / 2;
 2. Increase the population of your country by 1 and log the result to the console
 */
 
-usaPopulation++; // increments the stored value inside usaPopulation by 1.
+// usaPopulation++; // increments the stored value inside usaPopulation by 1.
 
 // console.log(usaPopulation); // returns 300,000,001
 
@@ -197,3 +197,70 @@ const description1 = 'The ' + country + ' is in ' + continent + ' and its ' + us
 
 // Strings and Template Literals
 
+const firstName = 'Jonas';
+const job = 'teacher'
+const birthYear = 2000;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+
+// console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+// console.log(jonasNew); // whenever you use a multi-line string, always use this `template literal` .
+
+// Practice Assignment:
+
+/*
+Recreate the 'description' variable from the last assignment, this time
+using the template literal syntax
+*/
+
+const description2 = `The ${country} is in ${continent} and it's ${usaPopulation} million people speaks ${language}`;
+
+// console.log(description2);
+
+// Taking Decisions: IF / ELSE Statements
+
+const yourName = `Mark`
+const age = 24;
+const isOldEnough = age >= 18;
+
+// if (isOldEnough) {
+//     console.log(`${yourName} can get his driver's license and start driving`);
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`${yourName} is too young. Wait another ${yearsLeft} years`);
+// }
+
+// const birthYear = 2012; // birthYear has already been declared in line 202.
+let century; // declared a variable century with no value 
+if (birthYear <= 2000) { // returns either true or false because we are using a <= operator.
+    century = 20; // assigned a value to the variable century
+} else { // if the block of code before this run false, this block of code will then run.
+    century = 21; // assigned another value to the variable century.
+}
+
+// console.log(century);
+
+// Practice Assignment:
+
+/*
+1. If your country's population is greater that 33 million, log a string like this to the
+console: 'Portugal's population is above average'. Otherwise, log a string like
+'Portugal's population is 22 million below average' (the 22 is the average of 33
+minus the country's population)
+*/
+
+if (usaPopulation > averagePopulation) {
+    console.log(`${country}'s population is above average`);
+} else {
+    console.log(`${country}'s population is 22 million below average`);
+}
+
+/*
+2. After checking the result, change the population temporarily to 13 and then to
+130. See the different results, and set the population back to original
+*/
+
+// 

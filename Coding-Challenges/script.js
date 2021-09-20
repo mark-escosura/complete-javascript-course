@@ -21,11 +21,11 @@ let johnWeight = 92
 2. Calculate both their BMIs using the formula (you can even implement both versions)
 */
 
-const markBmiResult = markWeight / (markHeight ** 2) / (markHeight * markHeight);
-// console.log(markBmiResult.toFixed(2));
+const markBmiResult = markWeight / markHeight ** 2
+console.log(markBmiResult.toFixed(2));
 
-const johnBmiResult = johnWeight / (johnHeight ** 2) / (johnHeight * johnHeight);
-// console.log(johnBmiResult.toFixed(2));
+const johnBmiResult = johnWeight / johnHeight ** 2
+console.log(johnBmiResult.toFixed(2));
 
 /*
 3. Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.

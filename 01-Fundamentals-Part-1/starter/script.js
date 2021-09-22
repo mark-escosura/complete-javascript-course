@@ -524,29 +524,41 @@ const day = 'sunday';
     arabic: '5th most spoken language'
     for all other simply log 'Great language too :D
 */
-const mostSpokenLanguage = 'tagalog'
 
-switch (mostSpokenLanguage) {
-    case 'chinese': // mostSpokenLanguage === 'chinese'
-    case 'mandarin':
-        console.log('MOST number of native speakers!'); // 'chinese' will return this
-        break;
-    case 'spanish':
-        console.log('2nd place in number of native speakers'); // 'spanish' will return this
-        break;
-    case 'english':
-        console.log('3rd place');
-        break;
-    case 'hindi':
-        console.log('Number 4');
-        break;
-    case 'arabic':
-        console.log('5th most spoken language;');
-        break;
-    case 'tagalog':
-        console.log('Best Language of All time!');
-        break;
-    default:
-        console.log('Great language too!')
-}
+// const mostSpokenLanguage = 'tagalog'
+
+// switch (mostSpokenLanguage) {
+//     case 'chinese': // mostSpokenLanguage === 'chinese'
+//     case 'mandarin':
+//         console.log('MOST number of native speakers!'); // 'chinese' will return this
+//         break;
+//     case 'spanish':
+//         console.log('2nd place in number of native speakers'); // 'spanish' will return this
+//         break;
+//     case 'english':
+//         console.log('3rd place');
+//         break;
+//     case 'hindi':
+//         console.log('Number 4');
+//         break;
+//     case 'arabic':
+//         console.log('5th most spoken language;');
+//         break;
+//     case 'tagalog':
+//         console.log('Best Language of All time!');
+//         break;
+//     default:
+//         console.log('Great language too!')
+// }
+
+// ####################### Statements and Expressions #######################
+
+// if (23 > 10 ){
+//     const str = '23 is bigger'; // statements
+// }
+
+// const me = 'Jonas';
+// console.log(`I'm ${2037 - 1991} years old ${me}`); // statement
+
+// ####################### The Conditional (Ternary) Operator #######################
 

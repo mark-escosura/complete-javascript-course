@@ -55,7 +55,7 @@ country. The variable should hold a Boolean value. Also declare a variable
 'language', but don't assign it any value yet
 */
 
-let isIsland = "Philippines";
+// let isIsland = "Philippines";
 let language;
 
 /*
@@ -409,3 +409,66 @@ situation
 // it is best to use the === operator because the answer requires a return of an integer / number. We don't 
 // necessarily need a string as an answer. Also helps us prevent bugs.
 
+// ####################### Boolean Logic #######################
+
+// AND ( && ) and OR ( || ) operators
+
+// AND ( && ) operator will only return true if both statements are true.
+
+// OR ( || ) operator will return true if either one of the statements are true.
+
+// ####################### Logical Operators #######################
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+const isTired = false; // C
+
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense); // has NOT operator therefore it will return false 
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+if (shouldDrive) {
+    console.log(`Sarah is able to drive!`)
+} else {
+    console.log(`Someone else should drive...`)
+}
+
+// ####################### Practice Assignment: #######################
+
+/*
+1. Comment out the previous code so the prompt doesn't get in the way
+*/
+
+/*
+2. Let's say Sarah is looking for a new country to live in. She wants to live in a
+country that speaks english, has less than 50 million people and is not an
+island.
+*/
+const speaksEnglish = true; // speaks English
+const lessThatFifty = true; // less than 50 million people
+const isIsland = false; // not an Island
+/*
+3. Write an if statement to help Sarah figure out if your country is right for her.
+You will need to write a condition that accounts for all of Sarah's criteria. Take
+your time with this, and check part of the solution if necessary.
+*/
+const newCountry = speaksEnglish && lessThatFifty && !isIsland; // a country to live in
+if (newCountry) {
+    console.log(`You should live in ${country} :)`);
+} else {
+    console.log(`${country} does not meet your criteria :(`);
+}
+/*
+4. If yours is the right country, log a string like this: 'You should live in Portugal :)'. If
+not, log 'Portugal does not meet your criteria :('
+*/
+
+/*
+5. Probably your country does not meet all the criteria. So go back and temporarily
+change some variables in order to make the condition true (unless you live in
+Canada :D)
+*/
+
+// 

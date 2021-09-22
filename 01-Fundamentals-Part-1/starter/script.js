@@ -428,12 +428,12 @@ const isTired = false; // C
 // console.log(!hasDriversLicense); // has NOT operator therefore it will return false 
 // console.log(hasDriversLicense && hasGoodVision && isTired);
 
-const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
-if (shouldDrive) {
-    console.log(`Sarah is able to drive!`)
-} else {
-    console.log(`Someone else should drive...`)
-}
+// const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+// if (shouldDrive) {
+//     console.log(`Sarah is able to drive!`)
+// } else {
+//     console.log(`Someone else should drive...`)
+// }
 
 // ####################### Practice Assignment: #######################
 
@@ -454,12 +454,12 @@ const isIsland = false; // not an Island
 You will need to write a condition that accounts for all of Sarah's criteria. Take
 your time with this, and check part of the solution if necessary.
 */
-const newCountry = speaksEnglish && lessThatFifty && !isIsland; // a country to live in
-if (newCountry) {
-    console.log(`You should live in ${country} :)`);
-} else {
-    console.log(`${country} does not meet your criteria :(`);
-}
+// const newCountry = speaksEnglish && lessThatFifty && !isIsland; // a country to live in
+// if (newCountry) {
+//     console.log(`You should live in ${country} :)`);
+// } else {
+//     console.log(`${country} does not meet your criteria :(`);
+// }
 /*
 4. If yours is the right country, log a string like this: 'You should live in Portugal :)'. If
 not, log 'Portugal does not meet your criteria :('
@@ -473,5 +473,80 @@ Canada :D)
 
 // ####################### The Switch Statement #######################
 
+const day = 'sunday';
 
+// switch(day){  // switch statement syntax //  the switch statement is becoming less and less used.
+//     case 'monday': // day === monday
+//         console.log('Plan course structure');
+//         console.log('Go to coding meetup');
+//         break;
+//     case 'tuesday':
+//         console.log('Prepare theory videos');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Write code examples');
+//         break;
+//     case 'friday':
+//         console.log('Record videos');
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('Enjoy the weekend! :D');
+//         break;
+//     default:
+//         console.log('Not a valid day!');    
+// }
+
+// if (day === 'monday'){ // if/else statement // if/else is more preferred in the modern javascript world
+//     console.log('Plan course structure');
+//     console.log('Go to coding meetup');
+// } else if (day === 'tuesday'){
+//     console.log('Prepare theory videos');
+// }  else if (day === 'thursday' || day === 'wednesday'){
+//     console.log('Write code examples');
+// } else if (day === 'friday'){
+//     console.log('Record videos');
+// } else if (day === 'saturday' || day === 'sunday'){
+//     console.log('Enjoy the weekend! :D'); 
+// } else {
+//     console.log('Not a valid day!');
+// }
+
+// ####################### Practice Assignment: #######################
+
+/*
+1. Use a switch statement to log the following string for the given 'language':
+    chinese or mandarin: 'MOST number of native speakers!'
+    spanish: '2nd place in number of native speakers'
+    english: '3rd place'
+    hindi: 'Number 4'
+    arabic: '5th most spoken language'
+    for all other simply log 'Great language too :D
+*/
+const mostSpokenLanguage = 'tagalog'
+
+switch (mostSpokenLanguage) {
+    case 'chinese': // mostSpokenLanguage === 'chinese'
+    case 'mandarin':
+        console.log('MOST number of native speakers!'); // 'chinese' will return this
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers'); // 'spanish' will return this
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language;');
+        break;
+    case 'tagalog':
+        console.log('Best Language of All time!');
+        break;
+    default:
+        console.log('Great language too!')
+}
 

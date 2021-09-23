@@ -562,3 +562,41 @@ const day = 'sunday';
 
 // ####################### The Conditional (Ternary) Operator #######################
 
+// const age4 = 19;
+// age4 >= 18 ? console.log(`I like to drink wine`) :  
+// console.log(`I like to drink water`); 
+// // ? = if block
+// // : = else
+
+// let drink2;
+// if (age4 >= 18){
+//     drink2 = `wine`;
+// } else {
+//     drink2 = `water`;
+// }
+
+// console.log(`I like to drink ${age >= 18 ? `wine` : `water`}`);
+
+// ####################### Practice Assignment: #######################
+
+/*
+1. If your country's population is greater than 33 million, use the ternary operator
+to log a string like this to the console: 'Portugal's population is above average'.
+Otherwise, simply log 'Portugal's population is below average'. Notice how only
+one word changes between these two sentences!
+*/
+let theCountryPopulation = 330 // 333 million
+    console.log(
+    `${country}'s population ${theCountryPopulation > 33 ? `above` : 
+`below`} average`
+);
+
+/*
+2. After checking the result, change the population temporarily to 13 and then to
+130. See the different results, and set the population back to original
+*/
+ theCountryPopulation = 13 // 333 million
+    console.log(
+    `${country}'s population ${theCountryPopulation > 33 ? `above` : 
+`below`} average`
+);
